@@ -1,0 +1,50 @@
+{
+  "name": "diploma_private",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "demo": "ts-node --project tsconfig.node.json examples/basic-usage.ts",
+    "demo:helpers": "ts-node --project tsconfig.node.json examples/helpers-usage.ts",
+    "bench": "node --expose-gc node_modules/ts-node/dist/bin.js --project tsconfig.node.json benchmarks/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lameach/diploma_private.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lameach/diploma_private/issues"
+  },
+  "homepage": "https://github.com/Lameach/diploma_private#readme",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "jest": "^29.7.0",
+    "lodash": "^4.17.21",
+    "mitata": "^0.1.14",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.6.2",
+    "ramda": "^0.30.1",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
