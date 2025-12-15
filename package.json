@@ -15,7 +15,9 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "demo": "ts-node --project tsconfig.node.json examples/basic-usage.ts",
     "demo:helpers": "ts-node --project tsconfig.node.json examples/helpers-usage.ts",
-    "bench": "node --expose-gc node_modules/ts-node/dist/bin.js --project tsconfig.node.json benchmarks/main.ts"
+    "bench": "node --expose-gc node_modules/ts-node/dist/bin.js --project tsconfig.node.json benchmarks/main.ts",
+    "bench:list": "node --expose-gc node_modules/ts-node/dist/bin.js --project tsconfig.node.json benchmarks/main.ts --list",
+    "bench:help": "node --expose-gc node_modules/ts-node/dist/bin.js --project tsconfig.node.json benchmarks/main.ts --help"
   },
   "repository": {
     "type": "git",
