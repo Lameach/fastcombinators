@@ -1,0 +1,22 @@
+# Source files
+src/
+tests/
+benchmarks/
+examples/
+
+# Config files
+tsconfig.json
+tsconfig.node.json
+jest.config.js
+eslint.config.js
+.prettierrc*
+
+# Development files
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Build artifacts (keep dist/)
+*.tsbuildinfo
+

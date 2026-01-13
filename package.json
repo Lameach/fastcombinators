@@ -1,13 +1,26 @@
 {
-  "name": "diploma_private",
+  "name": "fastcombinators",
   "version": "1.0.0",
-  "description": "",
+  "description": "High-performance functional combinator library for JavaScript/TypeScript based on Cursor-Sink pattern",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -21,15 +34,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lameach/diploma_private.git"
+    "url": "git+https://github.com/Lameach/fastcombinators.git"
   },
-  "keywords": [],
+  "keywords": [
+    "functional-programming",
+    "combinators",
+    "transducers",
+    "cursor-sink",
+    "high-performance",
+    "zero-allocation",
+    "stream-processing",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lameach/diploma_private/issues"
+    "url": "https://github.com/Lameach/fastcombinators/issues"
   },
-  "homepage": "https://github.com/Lameach/diploma_private#readme",
+  "homepage": "https://github.com/Lameach/fastcombinators#readme",
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.39.1",
